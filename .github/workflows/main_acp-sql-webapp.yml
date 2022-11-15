@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'acp-sql-webapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1A73BBF95072485397D1D08487CCB006 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67D29277094D499DAFFCB1350775CAE7 }}
           package: .
