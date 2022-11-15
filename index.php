@@ -61,7 +61,7 @@
     <h1 class="heading heading2">Your bakery offers you fresh products<br>baked every morning</h1>
     <br>
     <?php
-      $query="select * from [dbo].['Bakery - Teams$']";
+      $tsql="select * from [dbo].['Bakery - Teams$']";
       $getResults= sqlsrv_query($conn, $tsql);
       echo ("Reading data from table");
       if ($getResults == FALSE)
