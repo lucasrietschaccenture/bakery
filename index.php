@@ -69,7 +69,7 @@
       while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
        echo ($row['id'] . " " . $row['name'] . Bakery - Teams$);
       }
-    >?
+    ?>
     <div id="produits" class="items">
       <h1 class="heading-3">Pastries</h1>
       <div class="patisserie">
