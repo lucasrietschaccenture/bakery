@@ -15,7 +15,6 @@
   $connectionInfo = array("UID" => "lucasrietsch", "pwd" => "Ttkroj77!", "Database" => "acp-sql-database", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
   $serverName = "tcp:acp-sql-db-server.database.windows.net,1433";
   $conn = sqlsrv_connect($serverName, $connectionInfo);
-  print("I'm in baby");
 ?>
 <html data-wf-page="60571e6606fa625cd14e26b3" data-wf-site="60571e6606fa62cfe24e26b2">
 <head>
@@ -33,7 +32,9 @@
 </head>
 <body>
   <div class="hero-bakery wf-section">
-    <h1 data-w-id="824bca0a-3e76-1561-3d58-17e6a73a1f74" style="opacity:0" class="heading">Welcome to my great bakery</h1>
+    <h1 data-w-id="824bca0a-3e76-1561-3d58-17e6a73a1f74" style="opacity:0" class="heading">
+      Welcome to my great bakery, <?php print("I'm in baby"); ?>
+    </h1>
     <a href="#s2" data-w-id="e987ea6a-0940-7328-fb65-86dfeee77c07" style="opacity:0" class="link-block w-inline-block">
       <div class="text-block">let see our products</div>
     </a>
