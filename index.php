@@ -1,6 +1,22 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Fri Nov 11 2022 08:37:09 GMT+0000 (Coordinated Universal Time)  -->
+<?php
+  // PHP Data Objects(PDO) Sample Code:
+  try {
+      $conn = new PDO("sqlsrv:server = tcp:acp-sql-db-server.database.windows.net,1433; Database = acp-sql-database", "lucasrietsch", "Ttkroj77!");
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  }
+  catch (PDOException $e) {
+      print("Error connecting to SQL Server.");
+      die(print_r($e));
+  }
 
+  // SQL Server Extension Sample Code:
+  $connectionInfo = array("UID" => "lucasrietsch", "pwd" => "Ttkroj77!", "Database" => "acp-sql-database", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+  $serverName = "tcp:acp-sql-db-server.database.windows.net,1433";
+  $conn = sqlsrv_connect($serverName, $connectionInfo);
+  print("I'm in baby");
+?>
 <html data-wf-page="60571e6606fa625cd14e26b3" data-wf-site="60571e6606fa62cfe24e26b2">
 <head>
   <meta charset="utf-8">
