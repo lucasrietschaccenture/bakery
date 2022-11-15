@@ -59,6 +59,17 @@
       </div>
     </div>
     <h1 class="heading heading2">Your bakery offers you fresh products<br>baked every morning</h1>
+    <br>
+    <?php
+      $query="select * from [dbo].['Bakery - Teams$']";
+      $getResults= sqlsrv_query($conn, $tsql);
+      echo ("Reading data from table " . Bakery - Teams$);
+      if ($getResults == FALSE)
+          echo (sqlsrv_errors());
+      while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+       echo ($row['id'] . " " . $row['name'] . Bakery - Teams$);
+      }
+    >?
     <div id="produits" class="items">
       <h1 class="heading-3">Pastries</h1>
       <div class="patisserie">
